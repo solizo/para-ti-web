@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PARA TI</title>
+    <link rel="icon" type="text/png" href="img/Captura de pantalla 2024-05-01 151716.png">
+    <link rel="stylesheet" type="text/css" href="CSS/estilo.css">
+</head>
+<body class="f1">
+    <div class="envelope-wrapper">
+        <div class="envelope-wrapper">
+            <div id="envelope" class="close">
+                <div class="front flap"></div>
+                <div class="front pocket"></div>
+                <div class="letter">
+                    <div class="words line1 te-amo">Te Amo</div>
+                    <div class="words line2 te-amo"> Muchísimo Muchísimo 🥺 🥺 🥺 </div>
+                    <div class="words line3 te-amo">........COMO NO TIENES IDEA!!!!</div>
+                </div>
+            <div class="hearts">
+                <div class="heart a1"></div>
+                <div class="heart a2"></div>
+                <div class="heart a3"></div>
+                <div class="heart a4"></div>
+                <div class="heart a5"></div>
+                <div class="heart a6"></div>
+
+            </div>
+        </div>
+    </div>
+    <div class="reset">
+        <button id="open">Open</button>
+        <button id="reset">Reset</button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        // Función para abrir una ventana emergente con el código HTML
+        function verCodigo() {
+            // Obtener el contenido HTML de esta página
+            var codigoHTML = document.documentElement.innerHTML;
+            
+            // Crear una nueva ventana emergente con el código HTML
+            var ventanaEmergente = window.open("", "_blank", "width=600,height=400,scrollbars=yes,resizable=yes");
+            ventanaEmergente.document.write("<pre>" + codigoHTML + "</pre>");
+        }
+
+        // Asignar el evento de clic al botón "Ver Código"
+        document.getElementById("verCodigo").addEventListener("click", verCodigo);
+    </script>
+</body>
+</html>
